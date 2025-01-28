@@ -19,8 +19,7 @@ body {
     border-radius: 30px;
     background-color: white;
     white-space: nowrap;
-    text-align: center;
-    width: 90%; /* Responsive width */
+    width: 100%; /* Make header take full width of screen */
     max-width: 1000px; /* Restrict max width */
 }
 
@@ -42,7 +41,7 @@ body {
 @media (max-width: 720px) {
     #header {
         font-size: 6vw; /* Smaller font for smaller screens */
-        padding: 0 3%;
+        padding: 0 5%;
     }
     .clock {
         font-size: 10vw; /* Adjust clock font size */
