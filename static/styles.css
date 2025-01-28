@@ -1,141 +1,60 @@
-body{
+body {
     display: flex;
-    justify-content: center;
-    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
     margin-top: 80px;
     background-color: rgb(88, 88, 88);
+    font-family: Arial, sans-serif;
 }
 
-#header{
+#header {
     height: 80px;
-    font-size: 30px;
+    font-size: 5vw; /* Adjusts font size relative to viewport width */
     display: flex;
     align-items: center;
     justify-content: center;
     border-top: 1px solid white;
-    padding-left: 330px;
-    padding-right: 330px;
-    padding-bottom: 40px;
-    margin-bottom: 0;
+    padding: 0 5%; /* Responsive horizontal padding */
     border-radius: 30px;
     background-color: white;
     white-space: nowrap;
+    text-align: center;
+    width: 90%; /* Responsive width */
+    max-width: 1000px; /* Restrict max width */
 }
 
-.clock{
+.clock {
     background-color: orangered;
     color: white;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    width: 1000px;
+    border-radius: 0 0 30px 30px;
+    width: 90%; /* Responsive width */
+    max-width: 1000px; /* Restrict max width */
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100px;
-    margin-top: 80px;
-    position: absolute;
-}
-@media (min-width: 320px) and (max-width: 479px){
-    #header{
-        height: 80px;
-        font-size: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-top: 1px solid white;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 40px;
-        margin-bottom: 0;
-        border-radius: 30px;
-        background-color: white;
-        white-space: nowrap;
-    }
-    
-    .clock{
-        background-color: orangered;
-        color: white;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-        width: 286px;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 50px;
-        margin-top: 80px;
-        position: absolute;
-    }
-    
+    font-size: 8vw; /* Adjust font size relative to viewport width */
+    margin-top: 20px;
+    text-align: center;
 }
 
-
-@media (min-width: 480px) and (max-width: 720px) {
-    #header{
-        height: 80px;
-        font-size: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-top: 1px solid white;
-        padding-left: 37.5px;
-        padding-right: 37.5px;
-        padding-bottom: 40px;
-        margin-bottom: 0;
-        border-radius: 30px;
-        background-color: white;
-        white-space: nowrap;
+@media (max-width: 720px) {
+    #header {
+        font-size: 6vw; /* Smaller font for smaller screens */
+        padding: 0 3%;
     }
-    
-    .clock{
-        background-color: orangered;
-        color: white;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-        width: 300px;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 70px;
-        margin-top: 80px;
-        position: absolute;
+    .clock {
+        font-size: 10vw; /* Adjust clock font size */
+        height: 150px; /* Smaller height for compact view */
     }
-    
 }
 
-@media (min-width: 721px) and (max-width: 1024px) {
-    #header{
-        height: 80px;
-        font-size: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-top: 1px solid white;
-        padding-left: 80px;
-        padding-right: 80px;
-        padding-bottom: 40px;
-        margin-bottom: 0;
-        border-radius: 30px;
-        background-color: white;
-        white-space: nowrap;
+@media (max-width: 480px) {
+    #header {
+        font-size: 7vw;
     }
-    
-    .clock{
-        background-color: orangered;
-        color: white;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-        width: 500px;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 90px;
-        margin-top: 80px;
-        position: absolute;
+    .clock {
+        font-size: 12vw;
     }
- 
 }
-
